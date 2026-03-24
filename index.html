@@ -413,6 +413,89 @@
     footer a:hover {
       color: var(--accent);
     }
+
+    .esheet-section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--rim);
+      background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg) 100%);
+    }
+
+    .esheet-panel {
+      max-width: 52rem;
+    }
+
+    .esheet-panel > p {
+      color: var(--muted);
+      margin: 0 0 1.25rem;
+    }
+
+    .esheet-steps {
+      background: var(--card);
+      border: 1px solid var(--rim);
+      border-radius: 12px;
+      padding: 1.5rem 1.5rem 1.5rem 1.25rem;
+      box-shadow: 0 16px 44px rgba(26, 35, 50, 0.07);
+    }
+
+    .esheet-steps ol {
+      margin: 0;
+      padding-left: 1.35rem;
+    }
+
+    .esheet-steps li {
+      margin-bottom: 1rem;
+      color: var(--muted);
+      padding-left: 0.35rem;
+    }
+
+    .esheet-steps li:last-child {
+      margin-bottom: 0;
+    }
+
+    .esheet-steps strong {
+      color: var(--ink);
+    }
+
+    .esheet-footnote {
+      margin-top: 1.25rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .download-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem 1rem;
+      margin-top: 0.35rem;
+    }
+
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      font-family: "Syne", sans-serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.7rem 1.15rem;
+      border-radius: 6px;
+      background: var(--ink);
+      color: #fff !important;
+      text-decoration: none !important;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-download:hover {
+      background: #2d3a4f;
+      color: #fff !important;
+      transform: translateY(-1px);
+    }
+
+    .mailto-inline {
+      font-weight: 600;
+      word-break: break-all;
+    }
   </style>
 </head>
 <body>
@@ -422,6 +505,7 @@
       <nav aria-label="Page">
         <a href="#summary">Summary</a>
         <a href="#context">Context</a>
+        <a href="#e-sheet">Official e-sheet</a>
         <a href="#sign">Add your name</a>
       </nav>
     </div>
@@ -436,7 +520,7 @@
           A citizen-led Oregon measure to create an expert commission with transparency, accountability, and jurisdiction over state, federal, and private detention facilities—including ICE and Border Patrol sites on Oregon soil.
         </p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#sign">Support the measure</a>
+          <a class="btn btn-primary" href="#e-sheet">Download &amp; sign the e-sheet</a>
           <a class="btn btn-ghost" href="#summary">Read the summary</a>
         </div>
       </div>
@@ -485,9 +569,43 @@
         </div>
 
         <div class="legal-note">
-          <strong>Official signatures are on state forms.</strong>
-          Oregon sponsorship petitions must follow Secretary of State rules: only active Oregon voters may sign; circulators must witness signatures on paper sheets (or use approved e-sheets that include the full initiative text). This website helps supporters <em>organize and email</em> pledges—it does not replace a legal signature line on the state petition.
+          <strong>Official sponsorship signatures use the state e-sheet.</strong>
+          To count toward Initiative 2026-081, Oregon voters should use the Secretary of State&rsquo;s electronic signature sheet (with the full initiative text attached, as the sheet requires). This site provides that file below—download it, e-sign according to the instructions on the sheet, and email it to the campaign. The optional form in the next section is only for a separate message of support, not a substitute for the signed e-sheet.
         </div>
+      </div>
+    </section>
+
+    <section id="e-sheet" class="esheet-section" aria-labelledby="esheet-heading">
+      <div class="wrap esheet-panel">
+        <h2 id="esheet-heading">Sign the official e-sheet</h2>
+        <p>
+          These steps are what the campaign is asking supporters to do so your sponsorship signature can be collected and submitted properly:
+        </p>
+        <div class="esheet-steps">
+          <ol>
+            <li>
+              <strong>Download</strong> the state electronic signature sheet:
+              <span class="download-row">
+                <a class="btn-download" href="2026-081%20SP%20E%20sheet%2003202026.docx" download="2026-081 SP E sheet 03202026.docx">Download 2026-081 SP E sheet 03202026</a>
+                <span style="font-size: 0.9rem; color: var(--muted);">Microsoft Word (.docx)</span>
+              </span>
+            </li>
+            <li>
+              <strong>Open the file</strong> and read the signer instructions on the sheet. Sign only if you are an <strong>active registered voter in Oregon</strong> and you personally printed this sheet or asked someone to print it for you, as the form certifies. Do not sign unless a full, correct copy of the initiative text is provided with the sheet, as Oregon rules require.
+            </li>
+            <li>
+              <strong>Complete and e-sign</strong> the sheet using a method valid for your situation (for example, your PDF or Word e-signature workflow). Follow all fields the sheet asks for—signature, date, printed name, and residence address as directed.
+            </li>
+            <li>
+              <strong>Email the completed file</strong> to
+              <a class="mailto-inline" href="mailto:ahelpinghandlocksmith@gmail.com?subject=Initiative%202026-081%20%E2%80%94%20completed%20e-sheet">ahelpinghandlocksmith@gmail.com</a>.
+              Use a clear subject line such as &ldquo;Initiative 2026-081 — completed e-sheet&rdquo; and attach your signed document.
+            </li>
+          </ol>
+        </div>
+        <p class="esheet-footnote">
+          Questions about whether your signature qualifies, or how the chief petitioner will file sheets with the state, should go to that same email. This page is informational; the ballot measure text and SOS rules control.
+        </p>
       </div>
     </section>
 
@@ -517,12 +635,13 @@
     <section id="sign" aria-labelledby="sign-heading">
       <div class="wrap sign-panel">
         <div>
-          <h2 id="sign-heading">Add your name — email your support</h2>
+          <h2 id="sign-heading">Optional: message of support</h2>
           <p style="color: var(--muted); margin: 0 0 1rem;">
-            Complete the form and click <strong style="color: var(--ink);">Open email to send</strong>. Your mail app will open with a message addressed to the campaign inbox. You can edit the email before sending.
+            If you already <a href="#e-sheet">downloaded, e-signed, and emailed the official e-sheet</a>, you can skip this. The form below only opens a prefilled <strong style="color: var(--ink);">supporter email</strong>—it does not replace the signed <strong style="color: var(--ink);">2026-081 SP E sheet 03202026</strong> file. Click <strong style="color: var(--ink);">Open email to send</strong> to address
+            <a href="mailto:ahelpinghandlocksmith@gmail.com">ahelpinghandlocksmith@gmail.com</a>.
           </p>
           <p style="color: var(--muted); margin: 0; font-size: 0.95rem;">
-            Campaign contact: <a href="mailto:ahelpinghandlocksmith@gmail.com">ahelpinghandlocksmith@gmail.com</a>
+            For your official signature, email your <em>completed e-sheet</em> to the same address.
           </p>
         </div>
 
