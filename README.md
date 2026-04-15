@@ -34,7 +34,7 @@ There is **no** Node, bundler, or package install. Any static file server is eno
 ### Clone the repository
 
 ```bash
-git clone https://github.com/timsully/ODFOC.git
+git clone https://github.com/HelpingHandLocksmith/ODFOC.git
 cd ODFOC
 ```
 
@@ -73,7 +73,7 @@ For this project, Pages is configured from the **repository root**, so `index.ht
 
 With Pages enabled on **`main`** / **root**, the site is served at:
 
-**https://timsully.github.io/ODFOC/**
+**https://helpinghandlocksmith.github.io/ODFOC/**
 
 That URL updates if the repository is renamed or transferred; check **Settings → Pages** after any ownership change.
 
